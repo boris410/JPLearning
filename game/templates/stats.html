@@ -1,0 +1,19 @@
+{% load sass_tags %}{% load static %}
+
+    {% include "head.html" %}
+    {% include "nav_bar.html" %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="{% sass_src 'sass/game/stats.scss' %}">
+    {% csrf_token %}
+    <div class="container">
+      <div class="main-box">
+        <div class="chart-title">五十音錯誤Top10</div>
+        <div class="toggle">
+          <button id="show-hira" class="active">平假名</button>
+          <button id="show-kata">片假名</button>
+        </div>
+        <canvas id="kanaChart"></canvas>
+      </div>
+    </div>
+    <script src="{% sass_src 'js/common.js' %}"></script>
+    <script src="{% sass_src 'js/game/stats.js' %}"></script>

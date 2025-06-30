@@ -1,0 +1,50 @@
+
+{% load sass_tags %}{% load static %}
+{% include "head.html" %}
+{% include "nav_bar.html" %}
+<link rel="stylesheet" href="{% sass_src 'sass/game/game.scss' %}">
+<script src="{% static 'js/game/game.js' %}"></script>
+<div class="_hidden" id="mode-v" data-mode="{{ data.mod }}"></div>
+<div id="_Url" hidden data-url="{% static 'langData/jpn/' %}"></div>
+
+<div class="container">
+    
+    <div class="dashbord">
+        <div>靜音模式<input type="checkbox" id="_mute"></div>
+        <div>題目<span id="round">0</span>/<span id="total_questions">0</span></div>
+        <div>正確：<span id="correct_times"></sapn></div>
+        <div>錯誤：<sapn id="wrong_times"></span></div>
+        <div>時間倒數：<sapn id="counting_time"></span></div>
+    </div>
+    {% comment %} 按鈕區塊 {% endcomment %}
+   <div class="btn" >
+        <div id="start">開始</div>
+        <div class="_displayNone" id="finished">結束</div>
+        <div class="_displayNone" id="restart">重新開始</div>
+    </div> 
+    <div class="main-box" id="mainbox">
+        {% comment %} 顯示日文單字圖片 {% endcomment %}
+        <div class="prnpic" id="plane">
+            <div class="prnpic-inner">
+                <img src=""></img>
+              </div>
+        </div>
+        {% comment %} 作答時間倒數 {% endcomment %}
+        <div class="timeclock" id="_clock"></div>
+        <div class="mainbox-right">
+            {% comment %} 日文單字發音音檔{% endcomment %}
+            <div class="audio-play" id="audioPlay" data-type="" data-url="{% static 'langData/jpn/sound/basic/' %}">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            {% comment %} 顯示日文單字發音{% endcomment %}
+            <div id="pronounceWorld"></div>
+        </div>
+    </div>
+    
+    
+</div>
+<div class="footer">
+    <div class="button-grid" id="button-zone">
+        
+    </div>
+</div>

@@ -1,0 +1,11 @@
+asgiref==3.8.1
+certifi==2025.1.31
+Django==5.2
+django-sass-processor==1.4.1
+dnspython==2.7.0
+libsass==0.23.0
+mongoengine==0.29.1
+pymongo==4.12.0
+python-dotenv==1.1.0
+sqlparse==0.5.3
+blinker

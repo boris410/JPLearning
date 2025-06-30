@@ -1,0 +1,75 @@
+# ───── Python 快取與虛擬環境 ─────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.pyc
+*.py
+
+# Python 快取與暫存
+.pytest_cache/
+*.log
+*.tmp
+*.bak
+*.swp
+
+# 虛擬環境
+venv/
+env/
+.venv/
+ENV/
+
+# ───── Django 專案相關 ─────
+# SQLite 資料庫檔（視專案需求可保留）
+*.sqlite3
+
+# Django 的 local settings（如果你有使用）
+local_settings.py
+settings_local.py
+
+# Media/Static 資料（如果是開發用或不打算上傳）
+media/
+staticfiles/
+
+# Collectstatic 輸出
+/static/
+static_root/
+static_cdn/
+
+# Django migrations（視情況可加）
+**/migrations/*.pyc
+**/migrations/__pycache__/
+# ⚠️ 若不想上傳 migrations，可以加入：
+# **/migrations/
+# ⚠️ 但正式專案通常會保留 migrations 檔案
+
+# ───── 環境與機密檔案 ─────
+.env
+.env.*
+!.env.example
+*.log
+*.pot
+*.mo
+*.bak
+*.swp
+*.tmp
+
+# ───── 編輯器與系統檔案 ─────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ───── 測試與打包相關 ─────
+.tox/
+.nox/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+.history/

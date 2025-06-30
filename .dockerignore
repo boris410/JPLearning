@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django migration files (可選)
+*.sqlite3
+*.log
+
+# Virtualenv
+venv/
+env/
+*.egg-info/
+
+# Git
+.git/
+.gitignore
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# OS / macOS
+.DS_Store
+
+# Django static or media if managed elsewhere
+staticfiles/
+media/
+
+# coverage/testing
+.coverage
+htmlcov/
+.pytest_cache/

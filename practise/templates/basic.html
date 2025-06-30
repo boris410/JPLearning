@@ -1,0 +1,33 @@
+{% load sass_tags %}{% load static %}
+{% include "head.html" %}
+{% include "nav_bar.html" %}
+<link rel="stylesheet" href="{% sass_src 'sass/practise/basic.scss' %}">
+<div class="stateBlock">
+  <div id="_Url" hidden data-url="{% static 'langData/jpn/' %}"></div>
+  <div class="zone _left">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th class="pron" data-type="a">あ<br><span>a</span></th>
+          <th class="pron" data-type="i">い<br><span>i</span></th>
+          <th class="pron" data-type="u">う<br><span>u</span></th>
+          <th class="pron" data-type="e">え<br><span>e</span></th>
+          <th class="pron" data-type="o">お<br><span>o</span></th>
+        </tr>
+      </thead>
+      <tbody id="kanaTable">
+        <!-- 這裡用 JS 產生 -->
+      </tbody>
+    </table>
+  </div>
+  <div class="zone _right">
+    <h1>日本語 五十音表</h1>
+    <button class="toggle-btn" onclick="toggleScript()">切換：<span id="scriptLabel">平假名</span></button>
+    <div class="draw_plane" >
+      <img  id="plane" ></img>
+    </div>
+  </div>
+</div>
+
+<script src="{% static 'js/practise/basic.js' %}"></script>

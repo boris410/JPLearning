@@ -1,0 +1,35 @@
+{% load sass_tags %}
+<link rel="stylesheet" href="{% sass_src 'sass/common.scss' %}">
+<nav class="nav_bar">
+  <ul class="nav_menu">
+    <li class="dropdown">
+      <a href="#">熟記</a>
+      <ul class="dropdown_menu">
+        <li><a href="{% url 'practise:index' %}">５０音表</a></li>
+        {% comment %} <li><a href="{% url 'practise:basic' %}">基礎單字</a></li> {% endcomment %}
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">測驗</a>
+      <ul class="dropdown_menu">
+        <li><a href="{% url 'game:game_playGround' 1001 %}">平假名</a></li>
+        <li><a href="{% url 'game:game_playGround' 1002 %}">片假名</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="{% url 'game:pRecords' %}">個人數據</a>
+    </li>
+    
+    <li class="dropdown">
+      {% if request.session.uid %}
+        <a href="#">{{ request.session.name }}</a>
+        <sapn class="dropdown_menu"> </sapn>
+      {% else %}
+        <a href="/login">未登入</a>
+      {% endif %}
+        
+      </li>
+  </ul>
+</nav>
+
+  

@@ -1,0 +1,64 @@
+.nav_bar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 10px 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  
+  .nav_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav_menu > li {
+    position: relative;
+    margin-left:50px
+  }
+  
+  .nav_menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .nav_menu a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* ▼ dropdown 動畫核心設定 */
+  .dropdown_menu {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 140px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 0;
+    transition: max-height 2s linear;
+  }
+  
+  .dropdown_menu li a {
+    display: block;
+    padding: 10px 16px;
+    color: #444;
+    font-size: 14px;
+  }
+  
+  .dropdown_menu li a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* ▼ hover 時展開 dropdown */
+  .dropdown:hover .dropdown_menu {
+    max-height: 500px; /* 足夠容納所有選項 */
+  }

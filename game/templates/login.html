@@ -1,0 +1,15 @@
+{% load sass_tags %}{% load static %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="{% sass_src 'sass/login.scss' %}">
+<script src="{% static 'js/login.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+{% csrf_token %}
+<div id="app">
+    <div class="login-section">
+      <div class="login-title">登入選擇</div>
+      <button class="login-btn guest-btn" id="guestLogin">訪客登入</button>
+      {% comment %} <button class="login-btn google-btn" id="googleLogin">
+        <i class="fa-brands fa-google" style="margin-right: 8px;"></i>使用 Google 登入
+      </button> {% endcomment %}
+    </div>
+  </div>

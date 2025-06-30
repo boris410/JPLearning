@@ -1,0 +1,86 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #dfd1be;
+  color: #333;
+  text-align: center;
+  padding: 2rem; 
+  font-size: 0px;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #444; 
+  margin-top:0px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+
+th, td {
+  border: 1px solid #ccc;
+  width: 80px;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s; }
+
+td span {
+  display: block;
+  font-size: 20px;
+  color: #666;
+  margin-top: 0.3rem; }
+
+.pron:hover {
+  background-color: #222;
+  color: #fff; }
+
+.pron:hover span{
+  color: #ddd; }
+
+.toggle-btn {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background-color: #88a6a6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s; }
+
+.toggle-btn:hover {
+  background-color: #6f8b8b; }
+
+.zone{
+  display:inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+._left{
+  width:50%;
+  height: 100%;
+}
+
+._right{
+  width: 50%;
+  height: 100%;
+  font-size:initial;
+}
+
+.draw_plane{
+  width:60%;
+  height:60%;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 5%;
+}
+
+.draw_plane img{
+  width:100%;
+  height:100%;
+}

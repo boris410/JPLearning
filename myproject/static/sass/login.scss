@@ -1,0 +1,69 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #dfd1be;
+  }
+
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .login-section {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .login-btn {
+    font-size: 18px;
+    padding: 14px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .guest-btn {
+    background-color: #e3edf7;
+    color: #333;
+  }
+
+  .guest-btn:hover {
+    background-color: #333;
+    color: white;
+  }
+
+  .google-btn {
+    background-color: #db4437;
+    color: white;
+  }
+
+  .google-btn:hover {
+    background-color: #a33628;
+  }
+
+  @media (max-width: 768px) {
+    .login-section {
+      padding: 30px 20px;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
